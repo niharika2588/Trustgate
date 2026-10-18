@@ -1,0 +1,156 @@
+{
+ "label": "Cross-document mismatch",
+ "true_type": "cross_doc_mismatch",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004118",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504118",
+    "date": "2026-06-21",
+    "seller": "Horizon Imports LLC",
+    "buyer": "Orion Foods GmbH",
+    "currency": "USD",
+    "incoterm": "FOB",
+    "items": [
+     {
+      "product_id": "273",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "unit_price": 24.63,
+      "total": 2463.0
+     },
+     {
+      "product_id": "19",
+      "hs_code": "950662",
+      "description": "Soccer",
+      "qty": 20,
+      "unit_price": 122.49,
+      "total": 2449.8
+     },
+     {
+      "product_id": "691",
+      "hs_code": "950631",
+      "description": "Women's Golf Clubs",
+      "qty": 86,
+      "unit_price": 75.19,
+      "total": 6466.34
+     },
+     {
+      "product_id": "627",
+      "hs_code": "950699",
+      "description": "Shop By Sport",
+      "qty": 10,
+      "unit_price": 44.78,
+      "total": 447.8
+     }
+    ],
+    "shipment_id": "SHP-004118",
+    "total_amount": 11826.94
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104118",
+    "date": "2026-06-28",
+    "po_number": "PO-504118",
+    "seller": "Horizon Imports LLC",
+    "buyer": "Orion Foods GmbH",
+    "currency": "USD",
+    "incoterm": "FOB",
+    "items": [
+     {
+      "product_id": "273",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "unit_price": 24.63,
+      "total": 2463.0
+     },
+     {
+      "product_id": "19",
+      "hs_code": "950662",
+      "description": "Soccer",
+      "qty": 20,
+      "unit_price": 122.49,
+      "total": 2449.8
+     },
+     {
+      "product_id": "691",
+      "hs_code": "950631",
+      "description": "Women's Golf Clubs",
+      "qty": 100,
+      "unit_price": 75.19,
+      "total": 7519.0
+     },
+     {
+      "product_id": "627",
+      "hs_code": "950699",
+      "description": "Shop By Sport",
+      "qty": 10,
+      "unit_price": 44.78,
+      "total": 447.8
+     }
+    ],
+    "shipment_id": "SHP-004118",
+    "total_amount": 12879.6
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304118",
+    "date": "2026-06-28",
+    "invoice_number": "INV-104118",
+    "items": [
+     {
+      "product_id": "273",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "net_weight_kg": 30.0
+     },
+     {
+      "product_id": "19",
+      "hs_code": "950662",
+      "description": "Soccer",
+      "qty": 20,
+      "net_weight_kg": 9.0
+     },
+     {
+      "product_id": "691",
+      "hs_code": "950631",
+      "description": "Women's Golf Clubs",
+      "qty": 100,
+      "net_weight_kg": 330.0
+     },
+     {
+      "product_id": "627",
+      "hs_code": "950699",
+      "description": "Shop By Sport",
+      "qty": 10,
+      "net_weight_kg": 7.0
+     }
+    ],
+    "total_packages": 6,
+    "gross_weight_kg": 429.58,
+    "shipment_id": "SHP-004118"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704118",
+    "invoice_number": "INV-104118",
+    "shipper": "Horizon Imports LLC",
+    "consignee": "Orion Foods GmbH",
+    "port_of_loading": "INNSA",
+    "port_of_discharge": "USNYC",
+    "ship_on_board_date": "2026-07-02",
+    "delivery_eta": "2026-07-21",
+    "vessel": "Evergreen Triton",
+    "container_no": "CMAU1474107",
+    "total_packages": 6,
+    "gross_weight_kg": 429.58,
+    "shipment_id": "SHP-004118"
+   }
+  }
+ }
+}

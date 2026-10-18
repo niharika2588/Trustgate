@@ -1,0 +1,110 @@
+{
+ "label": "Clean shipment #1",
+ "true_type": "clean",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004001",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504001",
+    "date": "2026-06-07",
+    "seller": "Apex Overseas Pvt Ltd",
+    "buyer": "Coral Foods Ltd",
+    "currency": "USD",
+    "incoterm": "CIF",
+    "items": [
+     {
+      "product_id": "93",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 50,
+      "unit_price": 20.74,
+      "total": 1037.0
+     },
+     {
+      "product_id": "825",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 40,
+      "unit_price": 29.75,
+      "total": 1190.0
+     }
+    ],
+    "shipment_id": "SHP-004001",
+    "total_amount": 2227.0
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104001",
+    "date": "2026-06-15",
+    "po_number": "PO-504001",
+    "seller": "Apex Overseas Pvt Ltd",
+    "buyer": "Coral Foods Ltd",
+    "currency": "USD",
+    "incoterm": "CIF",
+    "items": [
+     {
+      "product_id": "93",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 50,
+      "unit_price": 20.74,
+      "total": 1037.0
+     },
+     {
+      "product_id": "825",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 40,
+      "unit_price": 29.75,
+      "total": 1190.0
+     }
+    ],
+    "shipment_id": "SHP-004001",
+    "total_amount": 2227.0
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304001",
+    "date": "2026-06-15",
+    "invoice_number": "INV-104001",
+    "items": [
+     {
+      "product_id": "93",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 50,
+      "net_weight_kg": 25.0
+     },
+     {
+      "product_id": "825",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 40,
+      "net_weight_kg": 12.0
+     }
+    ],
+    "total_packages": 2,
+    "gross_weight_kg": 39.06,
+    "shipment_id": "SHP-004001"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704001",
+    "invoice_number": "INV-104001",
+    "shipper": "Apex Overseas Pvt Ltd",
+    "consignee": "Coral Foods Ltd",
+    "port_of_loading": "NLRTM",
+    "port_of_discharge": "MYPKG",
+    "ship_on_board_date": "2026-06-17",
+    "delivery_eta": "2026-06-30",
+    "vessel": "MSC Aurora",
+    "container_no": "ONEU4100151",
+    "total_packages": 2,
+    "gross_weight_kg": 39.06,
+    "shipment_id": "SHP-004001"
+   }
+  }
+ }
+}

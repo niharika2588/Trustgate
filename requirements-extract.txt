@@ -1,0 +1,14 @@
+# Optional extra dependencies for the document-upload feature (POST /api/extract).
+# The base app still installs and runs with requirements.txt only - upload then answers 503.
+# Install with:  pip install -r requirements-extract.txt
+#
+# All of these are pure Python / pure wheels, so they work on IBM LinuxONE (s390x) as well.
+python-multipart        # required: multipart/form-data uploads (without it the route is not registered)
+pypdf                   # PDF text layer
+python-docx             # .docx
+openpyxl                # .xlsx / .xlsm
+
+# --- optional, only needed for scans / images (the app degrades with a clear message if absent) ---
+# pytesseract             # + the Tesseract binary (winget install UB-Mannheim.TesseractOCR / apt install tesseract-ocr)
+# pillow                 # image decoding for OCR
+# pypdfium2              # renders scanned PDF pages so Tesseract can read them (or use poppler-utils + pdf2image)

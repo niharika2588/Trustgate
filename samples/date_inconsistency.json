@@ -1,0 +1,156 @@
+{
+ "label": "Date inconsistency",
+ "true_type": "date_inconsistency",
+ "split": "train",
+ "shipment": {
+  "shipment_id": "SHP-004030",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504030",
+    "date": "2025-10-17",
+    "seller": "Bluewave Foods Co Ltd",
+    "buyer": "Sunrise Auto Components Ltd",
+    "currency": "USD",
+    "incoterm": "FOB",
+    "items": [
+     {
+      "product_id": "982",
+      "hs_code": "930200",
+      "description": "Hunting & Shooting",
+      "qty": 20,
+      "unit_price": 186.39,
+      "total": 3727.8
+     },
+     {
+      "product_id": "926",
+      "hs_code": "950450",
+      "description": "Trade-In",
+      "qty": 20,
+      "unit_price": 13.75,
+      "total": 275.0
+     },
+     {
+      "product_id": "282",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "unit_price": 26.55,
+      "total": 2655.0
+     },
+     {
+      "product_id": "1059",
+      "hs_code": "950629",
+      "description": "Water Sports",
+      "qty": 10,
+      "unit_price": 332.49,
+      "total": 3324.9
+     }
+    ],
+    "shipment_id": "SHP-004030",
+    "total_amount": 9982.7
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104030",
+    "date": "2025-11-16",
+    "po_number": "PO-504030",
+    "seller": "Bluewave Foods Co Ltd",
+    "buyer": "Sunrise Auto Components Ltd",
+    "currency": "USD",
+    "incoterm": "FOB",
+    "items": [
+     {
+      "product_id": "982",
+      "hs_code": "930200",
+      "description": "Hunting & Shooting",
+      "qty": 20,
+      "unit_price": 186.39,
+      "total": 3727.8
+     },
+     {
+      "product_id": "926",
+      "hs_code": "950450",
+      "description": "Trade-In",
+      "qty": 20,
+      "unit_price": 13.75,
+      "total": 275.0
+     },
+     {
+      "product_id": "282",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "unit_price": 26.55,
+      "total": 2655.0
+     },
+     {
+      "product_id": "1059",
+      "hs_code": "950629",
+      "description": "Water Sports",
+      "qty": 10,
+      "unit_price": 332.49,
+      "total": 3324.9
+     }
+    ],
+    "shipment_id": "SHP-004030",
+    "total_amount": 9982.7
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304030",
+    "date": "2025-10-25",
+    "invoice_number": "INV-104030",
+    "items": [
+     {
+      "product_id": "982",
+      "hs_code": "930200",
+      "description": "Hunting & Shooting",
+      "qty": 20,
+      "net_weight_kg": 30.0
+     },
+     {
+      "product_id": "926",
+      "hs_code": "950450",
+      "description": "Trade-In",
+      "qty": 20,
+      "net_weight_kg": 8.0
+     },
+     {
+      "product_id": "282",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "net_weight_kg": 30.0
+     },
+     {
+      "product_id": "1059",
+      "hs_code": "950629",
+      "description": "Water Sports",
+      "qty": 10,
+      "net_weight_kg": 35.0
+     }
+    ],
+    "total_packages": 5,
+    "gross_weight_kg": 108.54,
+    "shipment_id": "SHP-004030"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704030",
+    "invoice_number": "INV-104030",
+    "shipper": "Bluewave Foods Co Ltd",
+    "consignee": "Sunrise Auto Components Ltd",
+    "port_of_loading": "USNYC",
+    "port_of_discharge": "AEJEA",
+    "ship_on_board_date": "2025-10-27",
+    "delivery_eta": "2025-11-30",
+    "vessel": "MSC Aurora",
+    "container_no": "MSKU2525402",
+    "total_packages": 5,
+    "gross_weight_kg": 108.54,
+    "shipment_id": "SHP-004030"
+   }
+  }
+ }
+}

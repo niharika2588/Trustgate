@@ -1,0 +1,3 @@
+fastapi
+uvicorn
+# optional (not needed on LinuxONE if no s390x wheel): xgboost  -> only adds SHAP-based reasons

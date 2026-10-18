@@ -1,0 +1,133 @@
+{
+ "label": "Borderline (clean, model unsure)",
+ "true_type": "clean",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004355",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504355",
+    "date": "2026-05-10",
+    "seller": "Apex Electronics Pvt Ltd",
+    "buyer": "Lotus Traders LLC",
+    "currency": "USD",
+    "incoterm": "DAP",
+    "items": [
+     {
+      "product_id": "917",
+      "hs_code": "950450",
+      "description": "Trade-In",
+      "qty": 60,
+      "unit_price": 20.89,
+      "total": 1253.4
+     },
+     {
+      "product_id": "845",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 20,
+      "unit_price": 385.6,
+      "total": 7712.0
+     },
+     {
+      "product_id": "502",
+      "hs_code": "620469",
+      "description": "Women's Apparel",
+      "qty": 250,
+      "unit_price": 47.5,
+      "total": 11875.0
+     }
+    ],
+    "shipment_id": "SHP-004355",
+    "total_amount": 20840.4
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104355",
+    "date": "2026-05-20",
+    "po_number": "PO-504355",
+    "seller": "Apex Electronics Pvt Ltd",
+    "buyer": "Lotus Traders LLC",
+    "currency": "USD",
+    "incoterm": "DAP",
+    "items": [
+     {
+      "product_id": "917",
+      "hs_code": "950450",
+      "description": "Trade-In",
+      "qty": 60,
+      "unit_price": 20.89,
+      "total": 1253.4
+     },
+     {
+      "product_id": "845",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 20,
+      "unit_price": 385.6,
+      "total": 7712.0
+     },
+     {
+      "product_id": "502",
+      "hs_code": "620469",
+      "description": "Women's Apparel",
+      "qty": 250,
+      "unit_price": 47.5,
+      "total": 11875.0
+     }
+    ],
+    "shipment_id": "SHP-004355",
+    "total_amount": 20840.4
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304355",
+    "date": "2026-05-20",
+    "invoice_number": "INV-104355",
+    "items": [
+     {
+      "product_id": "917",
+      "hs_code": "950450",
+      "description": "Trade-In",
+      "qty": 60,
+      "net_weight_kg": 24.0
+     },
+     {
+      "product_id": "845",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 20,
+      "net_weight_kg": 36.0
+     },
+     {
+      "product_id": "502",
+      "hs_code": "620469",
+      "description": "Women's Apparel",
+      "qty": 250,
+      "net_weight_kg": 87.5
+     }
+    ],
+    "total_packages": 7,
+    "gross_weight_kg": 150.86,
+    "shipment_id": "SHP-004355"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704355",
+    "invoice_number": "INV-104355",
+    "shipper": "Apex Electronics Pvt Ltd",
+    "consignee": "Lotus Traders LLC",
+    "port_of_loading": "INMAA",
+    "port_of_discharge": "AEJEA",
+    "ship_on_board_date": "2026-05-22",
+    "delivery_eta": "2026-06-12",
+    "vessel": "ONE Harmony",
+    "container_no": "CMAU9099243",
+    "total_packages": 7,
+    "gross_weight_kg": 150.86,
+    "shipment_id": "SHP-004355"
+   }
+  }
+ }
+}

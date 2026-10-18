@@ -1,0 +1,156 @@
+{
+ "label": "Price far outside normal range",
+ "true_type": "price_anomaly",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004153",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504153",
+    "date": "2025-04-12",
+    "seller": "Lotus Auto Components Ltd",
+    "buyer": "Sunrise Auto Components Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "1354",
+      "hs_code": "852349",
+      "description": "DVDs",
+      "qty": 400,
+      "unit_price": 152.87,
+      "total": 61148.0
+     },
+     {
+      "product_id": "893",
+      "hs_code": "392690",
+      "description": "Accessories",
+      "qty": 20,
+      "unit_price": 24.99,
+      "total": 499.8
+     },
+     {
+      "product_id": "666",
+      "hs_code": "950631",
+      "description": "Men's Golf Clubs",
+      "qty": 30,
+      "unit_price": 21.5,
+      "total": 645.0
+     },
+     {
+      "product_id": "565",
+      "hs_code": "610469",
+      "description": "Girls' Apparel",
+      "qty": 50,
+      "unit_price": 59.5,
+      "total": 2975.0
+     }
+    ],
+    "shipment_id": "SHP-004153",
+    "total_amount": 65267.8
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104153",
+    "date": "2025-04-17",
+    "po_number": "PO-504153",
+    "seller": "Lotus Auto Components Ltd",
+    "buyer": "Sunrise Auto Components Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "1354",
+      "hs_code": "852349",
+      "description": "DVDs",
+      "qty": 400,
+      "unit_price": 152.87,
+      "total": 61148.0
+     },
+     {
+      "product_id": "893",
+      "hs_code": "392690",
+      "description": "Accessories",
+      "qty": 20,
+      "unit_price": 24.99,
+      "total": 499.8
+     },
+     {
+      "product_id": "666",
+      "hs_code": "950631",
+      "description": "Men's Golf Clubs",
+      "qty": 30,
+      "unit_price": 21.5,
+      "total": 645.0
+     },
+     {
+      "product_id": "565",
+      "hs_code": "610469",
+      "description": "Girls' Apparel",
+      "qty": 50,
+      "unit_price": 59.5,
+      "total": 2975.0
+     }
+    ],
+    "shipment_id": "SHP-004153",
+    "total_amount": 65267.8
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304153",
+    "date": "2025-04-17",
+    "invoice_number": "INV-104153",
+    "items": [
+     {
+      "product_id": "1354",
+      "hs_code": "852349",
+      "description": "DVDs",
+      "qty": 400,
+      "net_weight_kg": 48.0
+     },
+     {
+      "product_id": "893",
+      "hs_code": "392690",
+      "description": "Accessories",
+      "qty": 20,
+      "net_weight_kg": 6.0
+     },
+     {
+      "product_id": "666",
+      "hs_code": "950631",
+      "description": "Men's Golf Clubs",
+      "qty": 30,
+      "net_weight_kg": 105.0
+     },
+     {
+      "product_id": "565",
+      "hs_code": "610469",
+      "description": "Girls' Apparel",
+      "qty": 50,
+      "net_weight_kg": 12.5
+     }
+    ],
+    "total_packages": 11,
+    "gross_weight_kg": 187.09,
+    "shipment_id": "SHP-004153"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704153",
+    "invoice_number": "INV-104153",
+    "shipper": "Lotus Auto Components Ltd",
+    "consignee": "Sunrise Auto Components Ltd",
+    "port_of_loading": "CNSHA",
+    "port_of_discharge": "LKCMB",
+    "ship_on_board_date": "2025-04-23",
+    "delivery_eta": "2025-05-09",
+    "vessel": "ONE Harmony",
+    "container_no": "ONEU9018173",
+    "total_packages": 11,
+    "gross_weight_kg": 187.09,
+    "shipment_id": "SHP-004153"
+   }
+  }
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "label": "Missing required field",
+ "true_type": "missing_field",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004329",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504329",
+    "date": "2025-10-19",
+    "seller": null,
+    "buyer": "Zenith Overseas Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "172",
+      "hs_code": "950691",
+      "description": "Cardio Equipment",
+      "qty": 20,
+      "unit_price": 27.3,
+      "total": 546.0
+     },
+     {
+      "product_id": "311",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 100,
+      "unit_price": 109.95,
+      "total": 10995.0
+     }
+    ],
+    "shipment_id": "SHP-004329",
+    "total_amount": 11541.0
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104329",
+    "date": "2025-11-01",
+    "po_number": "PO-504329",
+    "seller": "Meridian Textiles Pvt Ltd",
+    "buyer": "Zenith Overseas Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "172",
+      "hs_code": "950691",
+      "description": "Cardio Equipment",
+      "qty": 20,
+      "unit_price": 27.3,
+      "total": 546.0
+     },
+     {
+      "product_id": "311",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 100,
+      "unit_price": 109.95,
+      "total": 10995.0
+     }
+    ],
+    "shipment_id": "SHP-004329",
+    "total_amount": 11541.0
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304329",
+    "date": "2025-11-01",
+    "invoice_number": "INV-104329",
+    "items": [
+     {
+      "product_id": "172",
+      "hs_code": "950691",
+      "description": "Cardio Equipment",
+      "qty": 20,
+      "net_weight_kg": 240.0
+     },
+     {
+      "product_id": "311",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 100,
+      "net_weight_kg": 180.0
+     }
+    ],
+    "total_packages": 3,
+    "gross_weight_kg": 445.86,
+    "shipment_id": "SHP-004329"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704329",
+    "invoice_number": "INV-104329",
+    "shipper": "Meridian Textiles Pvt Ltd",
+    "consignee": "Zenith Overseas Ltd",
+    "port_of_loading": "SGSIN",
+    "port_of_discharge": "USNYC",
+    "ship_on_board_date": "2025-11-06",
+    "delivery_eta": "2025-12-07",
+    "vessel": "ONE Harmony",
+    "container_no": "CMAU4913563",
+    "total_packages": 3,
+    "gross_weight_kg": 445.86,
+    "shipment_id": "SHP-004329"
+   }
+  }
+ }
+}

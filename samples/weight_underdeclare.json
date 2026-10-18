@@ -1,0 +1,110 @@
+{
+ "label": "Subtle: weight under-declared",
+ "true_type": "weight_underdeclare",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004073",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504073",
+    "date": "2026-06-05",
+    "seller": "Lotus Textiles Pvt Ltd",
+    "buyer": "Zenith Industries Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "768",
+      "hs_code": "621600",
+      "description": "Golf Gloves",
+      "qty": 150,
+      "unit_price": 239.99,
+      "total": 35998.5
+     },
+     {
+      "product_id": "1358",
+      "hs_code": "920290",
+      "description": "Music",
+      "qty": 300,
+      "unit_price": 245.01,
+      "total": 73503.0
+     }
+    ],
+    "shipment_id": "SHP-004073",
+    "total_amount": 109501.5
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104073",
+    "date": "2026-06-08",
+    "po_number": "PO-504073",
+    "seller": "Lotus Textiles Pvt Ltd",
+    "buyer": "Zenith Industries Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "768",
+      "hs_code": "621600",
+      "description": "Golf Gloves",
+      "qty": 150,
+      "unit_price": 239.99,
+      "total": 35998.5
+     },
+     {
+      "product_id": "1358",
+      "hs_code": "920290",
+      "description": "Music",
+      "qty": 300,
+      "unit_price": 245.01,
+      "total": 73503.0
+     }
+    ],
+    "shipment_id": "SHP-004073",
+    "total_amount": 109501.5
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304073",
+    "date": "2026-06-08",
+    "invoice_number": "INV-104073",
+    "items": [
+     {
+      "product_id": "768",
+      "hs_code": "621600",
+      "description": "Golf Gloves",
+      "qty": 150,
+      "net_weight_kg": 6.74
+     },
+     {
+      "product_id": "1358",
+      "hs_code": "920290",
+      "description": "Music",
+      "qty": 300,
+      "net_weight_kg": 269.43
+     }
+    ],
+    "total_packages": 9,
+    "gross_weight_kg": 311.94,
+    "shipment_id": "SHP-004073"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704073",
+    "invoice_number": "INV-104073",
+    "shipper": "Lotus Textiles Pvt Ltd",
+    "consignee": "Zenith Industries Ltd",
+    "port_of_loading": "AEJEA",
+    "port_of_discharge": "INNSA",
+    "ship_on_board_date": "2026-06-09",
+    "delivery_eta": "2026-07-05",
+    "vessel": "MSC Aurora",
+    "container_no": "MSKU4866313",
+    "total_packages": 9,
+    "gross_weight_kg": 311.94,
+    "shipment_id": "SHP-004073"
+   }
+  }
+ }
+}

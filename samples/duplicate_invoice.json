@@ -1,0 +1,110 @@
+{
+ "label": "Duplicate invoice number",
+ "true_type": "duplicate_invoice",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004186",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504186",
+    "date": "2025-08-10",
+    "seller": "Lotus Auto Components Ltd",
+    "buyer": "Summit Foods Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 50,
+      "unit_price": 48.45,
+      "total": 2422.5
+     },
+     {
+      "product_id": "235",
+      "hs_code": "950691",
+      "description": "Fitness Accessories",
+      "qty": 100,
+      "unit_price": 28.69,
+      "total": 2869.0
+     }
+    ],
+    "shipment_id": "SHP-004186",
+    "total_amount": 5291.5
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-101345",
+    "date": "2025-08-21",
+    "po_number": "PO-504186",
+    "seller": "Lotus Auto Components Ltd",
+    "buyer": "Summit Foods Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 50,
+      "unit_price": 48.45,
+      "total": 2422.5
+     },
+     {
+      "product_id": "235",
+      "hs_code": "950691",
+      "description": "Fitness Accessories",
+      "qty": 100,
+      "unit_price": 28.69,
+      "total": 2869.0
+     }
+    ],
+    "shipment_id": "SHP-004186",
+    "total_amount": 5291.5
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304186",
+    "date": "2025-08-21",
+    "invoice_number": "INV-101345",
+    "items": [
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 50,
+      "net_weight_kg": 12.5
+     },
+     {
+      "product_id": "235",
+      "hs_code": "950691",
+      "description": "Fitness Accessories",
+      "qty": 100,
+      "net_weight_kg": 80.0
+     }
+    ],
+    "total_packages": 3,
+    "gross_weight_kg": 104.13,
+    "shipment_id": "SHP-004186"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704186",
+    "invoice_number": "INV-101345",
+    "shipper": "Lotus Auto Components Ltd",
+    "consignee": "Summit Foods Ltd",
+    "port_of_loading": "SGSIN",
+    "port_of_discharge": "MYPKG",
+    "ship_on_board_date": "2025-08-28",
+    "delivery_eta": "2025-09-13",
+    "vessel": "MSC Aurora",
+    "container_no": "ONEU6870378",
+    "total_packages": 3,
+    "gross_weight_kg": 104.13,
+    "shipment_id": "SHP-004186"
+   }
+  }
+ }
+}

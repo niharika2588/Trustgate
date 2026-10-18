@@ -1,0 +1,133 @@
+{
+ "label": "Clean shipment #2",
+ "true_type": "clean",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004021",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504021",
+    "date": "2026-07-13",
+    "seller": "Apex Overseas Pvt Ltd",
+    "buyer": "Meridian Auto Components GmbH",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "78",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 80,
+      "unit_price": 88.99,
+      "total": 7119.2
+     },
+     {
+      "product_id": "258",
+      "hs_code": "950699",
+      "description": "Boxing & MMA",
+      "qty": 20,
+      "unit_price": 78.84,
+      "total": 1576.8
+     },
+     {
+      "product_id": "93",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 80,
+      "unit_price": 21.49,
+      "total": 1719.2
+     }
+    ],
+    "shipment_id": "SHP-004021",
+    "total_amount": 10415.2
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104021",
+    "date": "2026-07-19",
+    "po_number": "PO-504021",
+    "seller": "Apex Overseas Pvt Ltd",
+    "buyer": "Meridian Auto Components GmbH",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "78",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 80,
+      "unit_price": 88.99,
+      "total": 7119.2
+     },
+     {
+      "product_id": "258",
+      "hs_code": "950699",
+      "description": "Boxing & MMA",
+      "qty": 20,
+      "unit_price": 78.84,
+      "total": 1576.8
+     },
+     {
+      "product_id": "93",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 80,
+      "unit_price": 21.49,
+      "total": 1719.2
+     }
+    ],
+    "shipment_id": "SHP-004021",
+    "total_amount": 10415.2
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304021",
+    "date": "2026-07-19",
+    "invoice_number": "INV-104021",
+    "items": [
+     {
+      "product_id": "78",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 80,
+      "net_weight_kg": 40.0
+     },
+     {
+      "product_id": "258",
+      "hs_code": "950699",
+      "description": "Boxing & MMA",
+      "qty": 20,
+      "net_weight_kg": 18.0
+     },
+     {
+      "product_id": "93",
+      "hs_code": "950699",
+      "description": "Lacrosse",
+      "qty": 80,
+      "net_weight_kg": 40.0
+     }
+    ],
+    "total_packages": 3,
+    "gross_weight_kg": 105.18,
+    "shipment_id": "SHP-004021"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704021",
+    "invoice_number": "INV-104021",
+    "shipper": "Apex Overseas Pvt Ltd",
+    "consignee": "Meridian Auto Components GmbH",
+    "port_of_loading": "DEHAM",
+    "port_of_discharge": "USNYC",
+    "ship_on_board_date": "2026-07-26",
+    "delivery_eta": "2026-08-13",
+    "vessel": "Maersk Elba",
+    "container_no": "ONEU5115521",
+    "total_packages": 3,
+    "gross_weight_kg": 105.18,
+    "shipment_id": "SHP-004021"
+   }
+  }
+ }
+}

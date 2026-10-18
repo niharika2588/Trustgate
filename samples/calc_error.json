@@ -1,0 +1,87 @@
+{
+ "label": "Calculation error",
+ "true_type": "calc_error",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004108",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504108",
+    "date": "2026-01-05",
+    "seller": "Lotus Auto Components Ltd",
+    "buyer": "Zenith Overseas Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "305",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 150,
+      "unit_price": 183.08,
+      "total": 27462.0
+     }
+    ],
+    "shipment_id": "SHP-004108",
+    "total_amount": 27462.0
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104108",
+    "date": "2026-01-18",
+    "po_number": "PO-504108",
+    "seller": "Lotus Auto Components Ltd",
+    "buyer": "Zenith Overseas Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "305",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 150,
+      "unit_price": 183.08,
+      "total": 27462.0
+     }
+    ],
+    "shipment_id": "SHP-004108",
+    "total_amount": 29646.83
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304108",
+    "date": "2026-01-18",
+    "invoice_number": "INV-104108",
+    "items": [
+     {
+      "product_id": "305",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 150,
+      "net_weight_kg": 270.0
+     }
+    ],
+    "total_packages": 3,
+    "gross_weight_kg": 281.08,
+    "shipment_id": "SHP-004108"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704108",
+    "invoice_number": "INV-104108",
+    "shipper": "Lotus Auto Components Ltd",
+    "consignee": "Zenith Overseas Ltd",
+    "port_of_loading": "AEJEA",
+    "port_of_discharge": "NLRTM",
+    "ship_on_board_date": "2026-01-21",
+    "delivery_eta": "2026-02-17",
+    "vessel": "MSC Aurora",
+    "container_no": "ONEU8576252",
+    "total_packages": 3,
+    "gross_weight_kg": 281.08,
+    "shipment_id": "SHP-004108"
+   }
+  }
+ }
+}

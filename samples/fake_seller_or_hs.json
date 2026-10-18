@@ -1,0 +1,110 @@
+{
+ "label": "Unregistered seller / invalid HS code",
+ "true_type": "fake_seller_or_hs",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004526",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504526",
+    "date": "2025-11-20",
+    "seller": "Star Logistics 5167",
+    "buyer": "Sunrise Auto Components Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "642",
+      "hs_code": "950699",
+      "description": "Shop By Sport",
+      "qty": 100,
+      "unit_price": 26.1,
+      "total": 2610.0
+     },
+     {
+      "product_id": "1352",
+      "hs_code": "851830",
+      "description": "Consumer Electronics",
+      "qty": 10,
+      "unit_price": 235.18,
+      "total": 2351.8
+     }
+    ],
+    "shipment_id": "SHP-004526",
+    "total_amount": 4961.8
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104526",
+    "date": "2025-11-25",
+    "po_number": "PO-504526",
+    "seller": "Star Logistics 5167",
+    "buyer": "Sunrise Auto Components Ltd",
+    "currency": "USD",
+    "incoterm": "CFR",
+    "items": [
+     {
+      "product_id": "642",
+      "hs_code": "950699",
+      "description": "Shop By Sport",
+      "qty": 100,
+      "unit_price": 26.1,
+      "total": 2610.0
+     },
+     {
+      "product_id": "1352",
+      "hs_code": "851830",
+      "description": "Consumer Electronics",
+      "qty": 10,
+      "unit_price": 235.18,
+      "total": 2351.8
+     }
+    ],
+    "shipment_id": "SHP-004526",
+    "total_amount": 4961.8
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304526",
+    "date": "2025-11-25",
+    "invoice_number": "INV-104526",
+    "items": [
+     {
+      "product_id": "642",
+      "hs_code": "950699",
+      "description": "Shop By Sport",
+      "qty": 100,
+      "net_weight_kg": 70.0
+     },
+     {
+      "product_id": "1352",
+      "hs_code": "851830",
+      "description": "Consumer Electronics",
+      "qty": 10,
+      "net_weight_kg": 4.0
+     }
+    ],
+    "total_packages": 3,
+    "gross_weight_kg": 80.41,
+    "shipment_id": "SHP-004526"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704526",
+    "invoice_number": "INV-104526",
+    "shipper": "Star Logistics 5167",
+    "consignee": "Sunrise Auto Components Ltd",
+    "port_of_loading": "DEHAM",
+    "port_of_discharge": "CNSHA",
+    "ship_on_board_date": "2025-11-29",
+    "delivery_eta": "2025-12-13",
+    "vessel": "ONE Harmony",
+    "container_no": "ONEU3504380",
+    "total_packages": 3,
+    "gross_weight_kg": 80.41,
+    "shipment_id": "SHP-004526"
+   }
+  }
+ }
+}

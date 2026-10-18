@@ -1,0 +1,133 @@
+{
+ "label": "Subtle: volume spike vs seller history",
+ "true_type": "volume_spike",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004072",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504072",
+    "date": "2026-01-23",
+    "seller": "Evergreen Electronics LLC",
+    "buyer": "Meridian Electronics Ltd",
+    "currency": "USD",
+    "incoterm": "EXW",
+    "items": [
+     {
+      "product_id": "116",
+      "hs_code": "950659",
+      "description": "Tennis & Racquet",
+      "qty": 4000,
+      "unit_price": 37.79,
+      "total": 151160.0
+     },
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 100,
+      "unit_price": 65.37,
+      "total": 6537.0
+     },
+     {
+      "product_id": "793",
+      "hs_code": "950632",
+      "description": "Golf Balls",
+      "qty": 3000,
+      "unit_price": 12.89,
+      "total": 38670.0
+     }
+    ],
+    "shipment_id": "SHP-004072",
+    "total_amount": 196367.0
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104072",
+    "date": "2026-01-29",
+    "po_number": "PO-504072",
+    "seller": "Evergreen Electronics LLC",
+    "buyer": "Meridian Electronics Ltd",
+    "currency": "USD",
+    "incoterm": "EXW",
+    "items": [
+     {
+      "product_id": "116",
+      "hs_code": "950659",
+      "description": "Tennis & Racquet",
+      "qty": 4000,
+      "unit_price": 37.79,
+      "total": 151160.0
+     },
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 100,
+      "unit_price": 65.37,
+      "total": 6537.0
+     },
+     {
+      "product_id": "793",
+      "hs_code": "950632",
+      "description": "Golf Balls",
+      "qty": 3000,
+      "unit_price": 12.89,
+      "total": 38670.0
+     }
+    ],
+    "shipment_id": "SHP-004072",
+    "total_amount": 196367.0
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304072",
+    "date": "2026-01-29",
+    "invoice_number": "INV-104072",
+    "items": [
+     {
+      "product_id": "116",
+      "hs_code": "950659",
+      "description": "Tennis & Racquet",
+      "qty": 4000,
+      "net_weight_kg": 1400.0
+     },
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 100,
+      "net_weight_kg": 25.0
+     },
+     {
+      "product_id": "793",
+      "hs_code": "950632",
+      "description": "Golf Balls",
+      "qty": 3000,
+      "net_weight_kg": 600.0
+     }
+    ],
+    "total_packages": 142,
+    "gross_weight_kg": 2214.3,
+    "shipment_id": "SHP-004072"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704072",
+    "invoice_number": "INV-104072",
+    "shipper": "Evergreen Electronics LLC",
+    "consignee": "Meridian Electronics Ltd",
+    "port_of_loading": "LKCMB",
+    "port_of_discharge": "USNYC",
+    "ship_on_board_date": "2026-02-04",
+    "delivery_eta": "2026-02-15",
+    "vessel": "Evergreen Triton",
+    "container_no": "CMAU9482054",
+    "total_packages": 142,
+    "gross_weight_kg": 2214.3,
+    "shipment_id": "SHP-004072"
+   }
+  }
+ }
+}

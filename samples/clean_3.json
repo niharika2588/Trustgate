@@ -1,0 +1,133 @@
+{
+ "label": "Clean shipment #3",
+ "true_type": "clean",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004038",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504038",
+    "date": "2026-07-14",
+    "seller": "Apex Electronics Pvt Ltd",
+    "buyer": "Meridian Foods Co Ltd",
+    "currency": "USD",
+    "incoterm": "EXW",
+    "items": [
+     {
+      "product_id": "226",
+      "hs_code": "950691",
+      "description": "Fitness Accessories",
+      "qty": 10,
+      "unit_price": 503.99,
+      "total": 5039.9
+     },
+     {
+      "product_id": "671",
+      "hs_code": "950631",
+      "description": "Women's Golf Clubs",
+      "qty": 20,
+      "unit_price": 176.39,
+      "total": 3527.8
+     },
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 50,
+      "unit_price": 56.72,
+      "total": 2836.0
+     }
+    ],
+    "shipment_id": "SHP-004038",
+    "total_amount": 11403.7
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104038",
+    "date": "2026-07-18",
+    "po_number": "PO-504038",
+    "seller": "Apex Electronics Pvt Ltd",
+    "buyer": "Meridian Foods Co Ltd",
+    "currency": "USD",
+    "incoterm": "EXW",
+    "items": [
+     {
+      "product_id": "226",
+      "hs_code": "950691",
+      "description": "Fitness Accessories",
+      "qty": 10,
+      "unit_price": 503.99,
+      "total": 5039.9
+     },
+     {
+      "product_id": "671",
+      "hs_code": "950631",
+      "description": "Women's Golf Clubs",
+      "qty": 20,
+      "unit_price": 176.39,
+      "total": 3527.8
+     },
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 50,
+      "unit_price": 56.72,
+      "total": 2836.0
+     }
+    ],
+    "shipment_id": "SHP-004038",
+    "total_amount": 11403.7
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304038",
+    "date": "2026-07-18",
+    "invoice_number": "INV-104038",
+    "items": [
+     {
+      "product_id": "226",
+      "hs_code": "950691",
+      "description": "Fitness Accessories",
+      "qty": 10,
+      "net_weight_kg": 8.0
+     },
+     {
+      "product_id": "671",
+      "hs_code": "950631",
+      "description": "Women's Golf Clubs",
+      "qty": 20,
+      "net_weight_kg": 66.0
+     },
+     {
+      "product_id": "1347",
+      "hs_code": "611120",
+      "description": "Baby",
+      "qty": 50,
+      "net_weight_kg": 12.5
+     }
+    ],
+    "total_packages": 3,
+    "gross_weight_kg": 95.82,
+    "shipment_id": "SHP-004038"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704038",
+    "invoice_number": "INV-104038",
+    "shipper": "Apex Electronics Pvt Ltd",
+    "consignee": "Meridian Foods Co Ltd",
+    "port_of_loading": "AEJEA",
+    "port_of_discharge": "NLRTM",
+    "ship_on_board_date": "2026-07-20",
+    "delivery_eta": "2026-08-22",
+    "vessel": "ONE Harmony",
+    "container_no": "CMAU2574215",
+    "total_packages": 3,
+    "gross_weight_kg": 95.82,
+    "shipment_id": "SHP-004038"
+   }
+  }
+ }
+}

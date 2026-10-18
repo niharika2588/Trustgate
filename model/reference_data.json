@@ -1,0 +1,1114 @@
+{
+  "products": {
+    "19": {
+      "category": "Soccer",
+      "hs_code": "950662",
+      "list_price": 124.99,
+      "unit_weight_kg": 0.45,
+      "min_price": 93.74,
+      "max_price": 124.99
+    },
+    "24": {
+      "category": "Soccer",
+      "hs_code": "950662",
+      "list_price": 79.99,
+      "unit_weight_kg": 0.45,
+      "min_price": 59.99,
+      "max_price": 79.99
+    },
+    "35": {
+      "category": "Baseball & Softball",
+      "hs_code": "950669",
+      "list_price": 159.99,
+      "unit_weight_kg": 0.4,
+      "min_price": 119.99,
+      "max_price": 159.99
+    },
+    "37": {
+      "category": "Baseball & Softball",
+      "hs_code": "950669",
+      "list_price": 34.99,
+      "unit_weight_kg": 0.4,
+      "min_price": 26.24,
+      "max_price": 34.99
+    },
+    "44": {
+      "category": "Baseball & Softball",
+      "hs_code": "950669",
+      "list_price": 59.99,
+      "unit_weight_kg": 0.4,
+      "min_price": 44.99,
+      "max_price": 59.99
+    },
+    "58": {
+      "category": "Basketball",
+      "hs_code": "950662",
+      "list_price": 299.99,
+      "unit_weight_kg": 0.6,
+      "min_price": 224.99,
+      "max_price": 299.99
+    },
+    "60": {
+      "category": "Basketball",
+      "hs_code": "950662",
+      "list_price": 999.99,
+      "unit_weight_kg": 0.6,
+      "min_price": 749.99,
+      "max_price": 999.99
+    },
+    "61": {
+      "category": "Basketball",
+      "hs_code": "950662",
+      "list_price": 299.99,
+      "unit_weight_kg": 0.6,
+      "min_price": 224.99,
+      "max_price": 299.99
+    },
+    "78": {
+      "category": "Lacrosse",
+      "hs_code": "950699",
+      "list_price": 99.99,
+      "unit_weight_kg": 0.5,
+      "min_price": 74.99,
+      "max_price": 99.99
+    },
+    "93": {
+      "category": "Lacrosse",
+      "hs_code": "950699",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.5,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "116": {
+      "category": "Tennis & Racquet",
+      "hs_code": "950659",
+      "list_price": 44.99,
+      "unit_weight_kg": 0.35,
+      "min_price": 33.74,
+      "max_price": 44.99
+    },
+    "127": {
+      "category": "Hockey",
+      "hs_code": "950699",
+      "list_price": 329.99,
+      "unit_weight_kg": 0.8,
+      "min_price": 247.49,
+      "max_price": 329.99
+    },
+    "134": {
+      "category": "Hockey",
+      "hs_code": "950699",
+      "list_price": 25.0,
+      "unit_weight_kg": 0.8,
+      "min_price": 18.75,
+      "max_price": 25.0
+    },
+    "135": {
+      "category": "Hockey",
+      "hs_code": "950699",
+      "list_price": 22.0,
+      "unit_weight_kg": 0.8,
+      "min_price": 16.5,
+      "max_price": 22.0
+    },
+    "172": {
+      "category": "Cardio Equipment",
+      "hs_code": "950691",
+      "list_price": 30.0,
+      "unit_weight_kg": 12.0,
+      "min_price": 22.5,
+      "max_price": 30.0
+    },
+    "191": {
+      "category": "Cardio Equipment",
+      "hs_code": "950691",
+      "list_price": 99.99,
+      "unit_weight_kg": 12.0,
+      "min_price": 74.99,
+      "max_price": 99.99
+    },
+    "203": {
+      "category": "Strength Training",
+      "hs_code": "950691",
+      "list_price": 399.99,
+      "unit_weight_kg": 9.0,
+      "min_price": 299.99,
+      "max_price": 399.99
+    },
+    "208": {
+      "category": "Strength Training",
+      "hs_code": "950691",
+      "list_price": 1999.99,
+      "unit_weight_kg": 9.0,
+      "min_price": 1499.99,
+      "max_price": 1999.99
+    },
+    "216": {
+      "category": "Strength Training",
+      "hs_code": "950691",
+      "list_price": 189.0,
+      "unit_weight_kg": 9.0,
+      "min_price": 141.75,
+      "max_price": 189.0
+    },
+    "226": {
+      "category": "Fitness Accessories",
+      "hs_code": "950691",
+      "list_price": 599.99,
+      "unit_weight_kg": 0.8,
+      "min_price": 449.99,
+      "max_price": 599.99
+    },
+    "235": {
+      "category": "Fitness Accessories",
+      "hs_code": "950691",
+      "list_price": 34.99,
+      "unit_weight_kg": 0.8,
+      "min_price": 26.24,
+      "max_price": 34.99
+    },
+    "249": {
+      "category": "Boxing & MMA",
+      "hs_code": "950699",
+      "list_price": 54.97,
+      "unit_weight_kg": 0.9,
+      "min_price": 41.23,
+      "max_price": 54.97
+    },
+    "251": {
+      "category": "Boxing & MMA",
+      "hs_code": "950699",
+      "list_price": 89.99,
+      "unit_weight_kg": 0.9,
+      "min_price": 67.49,
+      "max_price": 89.99
+    },
+    "258": {
+      "category": "Boxing & MMA",
+      "hs_code": "950699",
+      "list_price": 94.99,
+      "unit_weight_kg": 0.9,
+      "min_price": 71.24,
+      "max_price": 94.99
+    },
+    "273": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 27.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 20.99,
+      "max_price": 27.99
+    },
+    "276": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 31.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 23.99,
+      "max_price": 31.99
+    },
+    "278": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 44.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 33.74,
+      "max_price": 44.99
+    },
+    "282": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 31.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 23.99,
+      "max_price": 31.99
+    },
+    "295": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 99.95,
+      "unit_weight_kg": 1.8,
+      "min_price": 74.96,
+      "max_price": 99.95
+    },
+    "303": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 399.99,
+      "unit_weight_kg": 1.8,
+      "min_price": 299.99,
+      "max_price": 399.99
+    },
+    "305": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 199.0,
+      "unit_weight_kg": 1.8,
+      "min_price": 149.25,
+      "max_price": 199.0
+    },
+    "306": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 89.99,
+      "unit_weight_kg": 1.8,
+      "min_price": 67.49,
+      "max_price": 89.99
+    },
+    "311": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 109.95,
+      "unit_weight_kg": 1.8,
+      "min_price": 82.46,
+      "max_price": 109.95
+    },
+    "359": {
+      "category": "As Seen on TV!",
+      "hs_code": "392690",
+      "list_price": 99.99,
+      "unit_weight_kg": 0.6,
+      "min_price": 74.99,
+      "max_price": 99.99
+    },
+    "364": {
+      "category": "Cleats",
+      "hs_code": "640419",
+      "list_price": 299.99,
+      "unit_weight_kg": 0.9,
+      "min_price": 224.99,
+      "max_price": 299.99
+    },
+    "365": {
+      "category": "Cleats",
+      "hs_code": "640419",
+      "list_price": 59.99,
+      "unit_weight_kg": 0.9,
+      "min_price": 44.99,
+      "max_price": 59.99
+    },
+    "403": {
+      "category": "Men's Footwear",
+      "hs_code": "640399",
+      "list_price": 129.99,
+      "unit_weight_kg": 0.9,
+      "min_price": 97.49,
+      "max_price": 129.99
+    },
+    "502": {
+      "category": "Women's Apparel",
+      "hs_code": "620469",
+      "list_price": 50.0,
+      "unit_weight_kg": 0.35,
+      "min_price": 37.5,
+      "max_price": 50.0
+    },
+    "564": {
+      "category": "Girls' Apparel",
+      "hs_code": "610469",
+      "list_price": 30.0,
+      "unit_weight_kg": 0.25,
+      "min_price": 22.5,
+      "max_price": 30.0
+    },
+    "565": {
+      "category": "Girls' Apparel",
+      "hs_code": "610469",
+      "list_price": 70.0,
+      "unit_weight_kg": 0.25,
+      "min_price": 52.5,
+      "max_price": 70.0
+    },
+    "567": {
+      "category": "Girls' Apparel",
+      "hs_code": "610469",
+      "list_price": 25.0,
+      "unit_weight_kg": 0.25,
+      "min_price": 18.75,
+      "max_price": 25.0
+    },
+    "572": {
+      "category": "Girls' Apparel",
+      "hs_code": "610469",
+      "list_price": 39.99,
+      "unit_weight_kg": 0.25,
+      "min_price": 29.99,
+      "max_price": 39.99
+    },
+    "607": {
+      "category": "Trade-In",
+      "hs_code": "950450",
+      "list_price": 249.99,
+      "unit_weight_kg": 0.4,
+      "min_price": 187.49,
+      "max_price": 249.99
+    },
+    "625": {
+      "category": "Shop By Sport",
+      "hs_code": "950699",
+      "list_price": 199.99,
+      "unit_weight_kg": 0.7,
+      "min_price": 149.99,
+      "max_price": 199.99
+    },
+    "627": {
+      "category": "Shop By Sport",
+      "hs_code": "950699",
+      "list_price": 39.99,
+      "unit_weight_kg": 0.7,
+      "min_price": 29.99,
+      "max_price": 39.99
+    },
+    "642": {
+      "category": "Shop By Sport",
+      "hs_code": "950699",
+      "list_price": 30.0,
+      "unit_weight_kg": 0.7,
+      "min_price": 22.5,
+      "max_price": 30.0
+    },
+    "646": {
+      "category": "Men's Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 99.99,
+      "unit_weight_kg": 3.5,
+      "min_price": 74.99,
+      "max_price": 99.99
+    },
+    "647": {
+      "category": "Men's Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 134.99,
+      "unit_weight_kg": 3.5,
+      "min_price": 101.24,
+      "max_price": 134.99
+    },
+    "652": {
+      "category": "Men's Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 129.99,
+      "unit_weight_kg": 3.5,
+      "min_price": 97.49,
+      "max_price": 129.99
+    },
+    "666": {
+      "category": "Men's Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 109.99,
+      "unit_weight_kg": 3.5,
+      "min_price": 82.49,
+      "max_price": 109.99
+    },
+    "671": {
+      "category": "Women's Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 209.99,
+      "unit_weight_kg": 3.3,
+      "min_price": 157.49,
+      "max_price": 209.99
+    },
+    "677": {
+      "category": "Women's Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 99.99,
+      "unit_weight_kg": 3.3,
+      "min_price": 74.99,
+      "max_price": 99.99
+    },
+    "691": {
+      "category": "Women's Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 79.99,
+      "unit_weight_kg": 3.3,
+      "min_price": 59.99,
+      "max_price": 79.99
+    },
+    "703": {
+      "category": "Golf Apparel",
+      "hs_code": "611030",
+      "list_price": 19.99,
+      "unit_weight_kg": 0.35,
+      "min_price": 14.99,
+      "max_price": 19.99
+    },
+    "705": {
+      "category": "Golf Apparel",
+      "hs_code": "611030",
+      "list_price": 119.99,
+      "unit_weight_kg": 0.35,
+      "min_price": 89.99,
+      "max_price": 119.99
+    },
+    "715": {
+      "category": "Golf Apparel",
+      "hs_code": "611030",
+      "list_price": 129.99,
+      "unit_weight_kg": 0.35,
+      "min_price": 97.49,
+      "max_price": 129.99
+    },
+    "724": {
+      "category": "Golf Shoes",
+      "hs_code": "640399",
+      "list_price": 100.0,
+      "unit_weight_kg": 1.0,
+      "min_price": 75.0,
+      "max_price": 100.0
+    },
+    "725": {
+      "category": "Golf Shoes",
+      "hs_code": "640399",
+      "list_price": 108.0,
+      "unit_weight_kg": 1.0,
+      "min_price": 81.0,
+      "max_price": 108.0
+    },
+    "728": {
+      "category": "Golf Shoes",
+      "hs_code": "640399",
+      "list_price": 65.0,
+      "unit_weight_kg": 1.0,
+      "min_price": 48.75,
+      "max_price": 65.0
+    },
+    "730": {
+      "category": "Golf Shoes",
+      "hs_code": "640399",
+      "list_price": 80.0,
+      "unit_weight_kg": 1.0,
+      "min_price": 60.0,
+      "max_price": 80.0
+    },
+    "743": {
+      "category": "Golf Bags & Carts",
+      "hs_code": "420292",
+      "list_price": 169.99,
+      "unit_weight_kg": 3.0,
+      "min_price": 127.49,
+      "max_price": 169.99
+    },
+    "768": {
+      "category": "Golf Gloves",
+      "hs_code": "621600",
+      "list_price": 299.99,
+      "unit_weight_kg": 0.1,
+      "min_price": 224.99,
+      "max_price": 299.99
+    },
+    "771": {
+      "category": "Golf Gloves",
+      "hs_code": "621600",
+      "list_price": 39.99,
+      "unit_weight_kg": 0.1,
+      "min_price": 29.99,
+      "max_price": 39.99
+    },
+    "773": {
+      "category": "Golf Gloves",
+      "hs_code": "621600",
+      "list_price": 249.99,
+      "unit_weight_kg": 0.1,
+      "min_price": 187.49,
+      "max_price": 249.99
+    },
+    "775": {
+      "category": "Golf Gloves",
+      "hs_code": "621600",
+      "list_price": 9.99,
+      "unit_weight_kg": 0.1,
+      "min_price": 7.49,
+      "max_price": 9.99
+    },
+    "777": {
+      "category": "Golf Gloves",
+      "hs_code": "621600",
+      "list_price": 79.99,
+      "unit_weight_kg": 0.1,
+      "min_price": 59.99,
+      "max_price": 79.99
+    },
+    "778": {
+      "category": "Golf Gloves",
+      "hs_code": "621600",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.1,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "786": {
+      "category": "Golf Gloves",
+      "hs_code": "621600",
+      "list_price": 179.99,
+      "unit_weight_kg": 0.1,
+      "min_price": 134.99,
+      "max_price": 179.99
+    },
+    "792": {
+      "category": "Golf Balls",
+      "hs_code": "950632",
+      "list_price": 14.99,
+      "unit_weight_kg": 0.2,
+      "min_price": 11.24,
+      "max_price": 14.99
+    },
+    "793": {
+      "category": "Golf Balls",
+      "hs_code": "950632",
+      "list_price": 14.99,
+      "unit_weight_kg": 0.2,
+      "min_price": 11.24,
+      "max_price": 14.99
+    },
+    "797": {
+      "category": "Golf Balls",
+      "hs_code": "950632",
+      "list_price": 17.99,
+      "unit_weight_kg": 0.2,
+      "min_price": 13.49,
+      "max_price": 17.99
+    },
+    "804": {
+      "category": "Golf Balls",
+      "hs_code": "950632",
+      "list_price": 19.99,
+      "unit_weight_kg": 0.2,
+      "min_price": 14.99,
+      "max_price": 19.99
+    },
+    "810": {
+      "category": "Golf Balls",
+      "hs_code": "950632",
+      "list_price": 19.99,
+      "unit_weight_kg": 0.2,
+      "min_price": 14.99,
+      "max_price": 19.99
+    },
+    "818": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 47.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 35.99,
+      "max_price": 47.99
+    },
+    "821": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 51.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 38.99,
+      "max_price": 51.99
+    },
+    "822": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 47.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 35.99,
+      "max_price": 47.99
+    },
+    "823": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 51.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 38.99,
+      "max_price": 51.99
+    },
+    "825": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 31.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 23.99,
+      "max_price": 31.99
+    },
+    "828": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 31.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 23.99,
+      "max_price": 31.99
+    },
+    "835": {
+      "category": "Electronics",
+      "hs_code": "851762",
+      "list_price": 31.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 23.99,
+      "max_price": 31.99
+    },
+    "845": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 299.99,
+      "unit_weight_kg": 1.8,
+      "min_price": 224.99,
+      "max_price": 299.99
+    },
+    "858": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 199.99,
+      "unit_weight_kg": 1.8,
+      "min_price": 149.99,
+      "max_price": 199.99
+    },
+    "860": {
+      "category": "Kids' Golf Clubs",
+      "hs_code": "950631",
+      "list_price": 599.99,
+      "unit_weight_kg": 1.8,
+      "min_price": 449.99,
+      "max_price": 599.99
+    },
+    "885": {
+      "category": "Accessories",
+      "hs_code": "392690",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "886": {
+      "category": "Accessories",
+      "hs_code": "392690",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "893": {
+      "category": "Accessories",
+      "hs_code": "392690",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "897": {
+      "category": "Accessories",
+      "hs_code": "392690",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "905": {
+      "category": "Accessories",
+      "hs_code": "392690",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "906": {
+      "category": "Accessories",
+      "hs_code": "392690",
+      "list_price": 24.99,
+      "unit_weight_kg": 0.3,
+      "min_price": 18.74,
+      "max_price": 24.99
+    },
+    "917": {
+      "category": "Trade-In",
+      "hs_code": "950450",
+      "list_price": 21.99,
+      "unit_weight_kg": 0.4,
+      "min_price": 16.49,
+      "max_price": 21.99
+    },
+    "924": {
+      "category": "Trade-In",
+      "hs_code": "950450",
+      "list_price": 15.99,
+      "unit_weight_kg": 0.4,
+      "min_price": 11.99,
+      "max_price": 15.99
+    },
+    "926": {
+      "category": "Trade-In",
+      "hs_code": "950450",
+      "list_price": 15.99,
+      "unit_weight_kg": 0.4,
+      "min_price": 11.99,
+      "max_price": 15.99
+    },
+    "957": {
+      "category": "Camping & Hiking",
+      "hs_code": "630622",
+      "list_price": 299.98,
+      "unit_weight_kg": 4.0,
+      "min_price": 224.99,
+      "max_price": 299.98
+    },
+    "977": {
+      "category": "Hunting & Shooting",
+      "hs_code": "930200",
+      "list_price": 29.99,
+      "unit_weight_kg": 1.5,
+      "min_price": 22.49,
+      "max_price": 29.99
+    },
+    "981": {
+      "category": "Hunting & Shooting",
+      "hs_code": "930200",
+      "list_price": 99.0,
+      "unit_weight_kg": 1.5,
+      "min_price": 74.25,
+      "max_price": 99.0
+    },
+    "982": {
+      "category": "Hunting & Shooting",
+      "hs_code": "930200",
+      "list_price": 149.99,
+      "unit_weight_kg": 1.5,
+      "min_price": 112.49,
+      "max_price": 149.99
+    },
+    "1004": {
+      "category": "Fishing",
+      "hs_code": "950790",
+      "list_price": 399.98,
+      "unit_weight_kg": 2.5,
+      "min_price": 299.99,
+      "max_price": 399.98
+    },
+    "1014": {
+      "category": "Indoor/Outdoor Games",
+      "hs_code": "950490",
+      "list_price": 49.98,
+      "unit_weight_kg": 1.8,
+      "min_price": 37.48,
+      "max_price": 49.98
+    },
+    "1059": {
+      "category": "Water Sports",
+      "hs_code": "950629",
+      "list_price": 349.99,
+      "unit_weight_kg": 3.5,
+      "min_price": 262.49,
+      "max_price": 349.99
+    },
+    "1073": {
+      "category": "Water Sports",
+      "hs_code": "950629",
+      "list_price": 199.99,
+      "unit_weight_kg": 3.5,
+      "min_price": 149.99,
+      "max_price": 199.99
+    },
+    "1346": {
+      "category": "Books",
+      "hs_code": "490199",
+      "list_price": 31.08,
+      "unit_weight_kg": 0.5,
+      "min_price": 23.31,
+      "max_price": 31.08
+    },
+    "1347": {
+      "category": "Baby",
+      "hs_code": "611120",
+      "list_price": 59.08,
+      "unit_weight_kg": 0.25,
+      "min_price": 44.31,
+      "max_price": 59.08
+    },
+    "1348": {
+      "category": "CDs",
+      "hs_code": "852349",
+      "list_price": 11.29,
+      "unit_weight_kg": 0.1,
+      "min_price": 8.47,
+      "max_price": 11.29
+    },
+    "1349": {
+      "category": "Cameras",
+      "hs_code": "852580",
+      "list_price": 452.04,
+      "unit_weight_kg": 0.7,
+      "min_price": 339.03,
+      "max_price": 452.04
+    },
+    "1350": {
+      "category": "Children's Clothing",
+      "hs_code": "611130",
+      "list_price": 357.1,
+      "unit_weight_kg": 0.25,
+      "min_price": 267.83,
+      "max_price": 357.1
+    },
+    "1351": {
+      "category": "Computers",
+      "hs_code": "847130",
+      "list_price": 1500.0,
+      "unit_weight_kg": 2.2,
+      "min_price": 1125.0,
+      "max_price": 1500.0
+    },
+    "1352": {
+      "category": "Consumer Electronics",
+      "hs_code": "851830",
+      "list_price": 252.88,
+      "unit_weight_kg": 0.4,
+      "min_price": 189.66,
+      "max_price": 252.88
+    },
+    "1353": {
+      "category": "Crafts",
+      "hs_code": "960990",
+      "list_price": 461.48,
+      "unit_weight_kg": 0.5,
+      "min_price": 346.11,
+      "max_price": 461.48
+    },
+    "1354": {
+      "category": "DVDs",
+      "hs_code": "852349",
+      "list_price": 164.38,
+      "unit_weight_kg": 0.12,
+      "min_price": 123.28,
+      "max_price": 164.38
+    },
+    "1355": {
+      "category": "Garden",
+      "hs_code": "820110",
+      "list_price": 532.58,
+      "unit_weight_kg": 1.5,
+      "min_price": 399.44,
+      "max_price": 532.58
+    },
+    "1356": {
+      "category": "Health and Beauty",
+      "hs_code": "330499",
+      "list_price": 293.04,
+      "unit_weight_kg": 0.3,
+      "min_price": 219.78,
+      "max_price": 293.04
+    },
+    "1357": {
+      "category": "Men's Clothing",
+      "hs_code": "610910",
+      "list_price": 210.85,
+      "unit_weight_kg": 0.3,
+      "min_price": 158.14,
+      "max_price": 210.85
+    },
+    "1358": {
+      "category": "Music",
+      "hs_code": "920290",
+      "list_price": 260.65,
+      "unit_weight_kg": 2.0,
+      "min_price": 195.49,
+      "max_price": 260.65
+    },
+    "1359": {
+      "category": "Pet Supplies",
+      "hs_code": "230910",
+      "list_price": 84.4,
+      "unit_weight_kg": 1.0,
+      "min_price": 63.3,
+      "max_price": 84.4
+    },
+    "1360": {
+      "category": "Sporting Goods",
+      "hs_code": "950699",
+      "list_price": 327.75,
+      "unit_weight_kg": 0.8,
+      "min_price": 245.81,
+      "max_price": 327.75
+    },
+    "1361": {
+      "category": "Toys",
+      "hs_code": "950300",
+      "list_price": 11.54,
+      "unit_weight_kg": 0.5,
+      "min_price": 8.65,
+      "max_price": 11.54
+    },
+    "1362": {
+      "category": "Video Games",
+      "hs_code": "950450",
+      "list_price": 39.75,
+      "unit_weight_kg": 0.2,
+      "min_price": 29.81,
+      "max_price": 39.75
+    },
+    "1363": {
+      "category": "Women's Clothing",
+      "hs_code": "620429",
+      "list_price": 215.82,
+      "unit_weight_kg": 0.35,
+      "min_price": 161.87,
+      "max_price": 215.82
+    }
+  },
+  "valid_hs_codes": [
+    "230910",
+    "330499",
+    "392690",
+    "420292",
+    "490199",
+    "610469",
+    "610910",
+    "611030",
+    "611120",
+    "611130",
+    "620429",
+    "620469",
+    "621600",
+    "630622",
+    "640399",
+    "640419",
+    "820110",
+    "847130",
+    "851762",
+    "851830",
+    "852349",
+    "852580",
+    "920290",
+    "930200",
+    "950300",
+    "950450",
+    "950490",
+    "950629",
+    "950631",
+    "950632",
+    "950659",
+    "950662",
+    "950669",
+    "950691",
+    "950699",
+    "950790",
+    "960990"
+  ],
+  "ports": [
+    {
+      "code": "INMAA",
+      "name": "Chennai"
+    },
+    {
+      "code": "INNSA",
+      "name": "Nhava Sheva"
+    },
+    {
+      "code": "SGSIN",
+      "name": "Singapore"
+    },
+    {
+      "code": "CNSHA",
+      "name": "Shanghai"
+    },
+    {
+      "code": "AEJEA",
+      "name": "Jebel Ali"
+    },
+    {
+      "code": "NLRTM",
+      "name": "Rotterdam"
+    },
+    {
+      "code": "USNYC",
+      "name": "New York"
+    },
+    {
+      "code": "DEHAM",
+      "name": "Hamburg"
+    },
+    {
+      "code": "LKCMB",
+      "name": "Colombo"
+    },
+    {
+      "code": "MYPKG",
+      "name": "Port Klang"
+    }
+  ],
+  "registered_sellers": [
+    "Apex Auto Components LLC",
+    "Apex Electronics Pvt Ltd",
+    "Apex Overseas Pvt Ltd",
+    "Bluewave Auto Components Co Ltd",
+    "Bluewave Exports LLC",
+    "Bluewave Foods Co Ltd",
+    "Bluewave Foods GmbH",
+    "Bluewave Imports LLC",
+    "Bluewave Industries Pvt Ltd",
+    "Coral Electronics LLC",
+    "Evergreen Electronics LLC",
+    "Evergreen Electronics Pvt Ltd",
+    "Evergreen Industries Co Ltd",
+    "Evergreen Overseas Pvt Ltd",
+    "Falcon Auto Components Co Ltd",
+    "Falcon Auto Components GmbH",
+    "Falcon Electronics LLC",
+    "Falcon Logistics Ltd",
+    "Falcon Overseas Ltd",
+    "Greenfield Exports GmbH",
+    "Greenfield Exports Ltd",
+    "Greenfield Imports GmbH",
+    "Greenfield Industries Ltd",
+    "Horizon Imports LLC",
+    "Lotus Auto Components Ltd",
+    "Lotus Auto Components Pvt Ltd",
+    "Lotus Foods Ltd",
+    "Lotus Logistics Pvt Ltd",
+    "Lotus Textiles Ltd",
+    "Lotus Textiles Pvt Ltd",
+    "Lotus Traders Pvt Ltd",
+    "Meridian Textiles Pvt Ltd",
+    "Pioneer Textiles Co Ltd",
+    "Pioneer Textiles Ltd",
+    "Summit Traders GmbH",
+    "Sunrise Auto Components Ltd",
+    "Sunrise Overseas LLC",
+    "Sunrise Traders Ltd",
+    "Zenith Logistics GmbH",
+    "Zenith Logistics Pvt Ltd"
+  ],
+  "registered_buyers": [
+    "Apex Overseas LLC",
+    "Bluewave Electronics GmbH",
+    "Bluewave Logistics LLC",
+    "Bluewave Overseas Ltd",
+    "Coral Electronics Co Ltd",
+    "Coral Foods Ltd",
+    "Coral Imports Pvt Ltd",
+    "Coral Traders LLC",
+    "Evergreen Imports LLC",
+    "Evergreen Textiles Pvt Ltd",
+    "Falcon Logistics Co Ltd",
+    "Greenfield Electronics LLC",
+    "Greenfield Logistics Ltd",
+    "Greenfield Overseas LLC",
+    "Horizon Auto Components GmbH",
+    "Horizon Traders GmbH",
+    "Lotus Electronics Ltd",
+    "Lotus Exports Pvt Ltd",
+    "Lotus Overseas LLC",
+    "Lotus Textiles GmbH",
+    "Lotus Traders LLC",
+    "Meridian Auto Components GmbH",
+    "Meridian Electronics Ltd",
+    "Meridian Foods Co Ltd",
+    "Orion Auto Components GmbH",
+    "Orion Foods Co Ltd",
+    "Orion Foods GmbH",
+    "Orion Industries Ltd",
+    "Orion Overseas GmbH",
+    "Pioneer Auto Components Pvt Ltd",
+    "Summit Foods Ltd",
+    "Summit Imports LLC",
+    "Sunrise Auto Components Ltd",
+    "Sunrise Exports Ltd",
+    "Zenith Auto Components Pvt Ltd",
+    "Zenith Imports Co Ltd",
+    "Zenith Industries Ltd",
+    "Zenith Logistics Co Ltd",
+    "Zenith Overseas Ltd",
+    "Zenith Traders LLC"
+  ],
+  "notes": "prices/discount/quantity patterns from DataCo; HS codes and unit weights are assumptions"
+}

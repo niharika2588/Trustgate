@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrustGate Console</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%232f5bea%27/%3E%3Cpath d=%27M9 17l5 5 9-11%27 stroke=%27white%27 stroke-width=%273.5%27 fill=%27none%27/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f4f5f7; --panel: #ffffff; --ink: #1b1f27; --muted: #5d6675; --line: #dde1e8;
+    --accent: #2f5bea; --ok: #1a7f4b; --ok-bg: #e4f4ea; --warn: #9a6200; --warn-bg: #fdf0d5;
+    --bad: #b3261e; --bad-bg: #fbe7e5; --code-bg: #f0f2f6; --track: #e3e6ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151b; --panel: #1b2029; --ink: #e8ebf1; --muted: #9aa3b2; --line: #2c3340;
+      --accent: #7c9bff; --ok: #5fd08f; --ok-bg: #14301f; --warn: #f0b84d; --warn-bg: #3a2b0c;
+      --bad: #ff8a80; --bad-bg: #3b1916; --code-bg: #232a36; --track: #2c3340;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151b; --panel: #1b2029; --ink: #e8ebf1; --muted: #9aa3b2; --line: #2c3340;
+    --accent: #7c9bff; --ok: #5fd08f; --ok-bg: #14301f; --warn: #f0b84d; --warn-bg: #3a2b0c;
+    --bad: #ff8a80; --bad-bg: #3b1916; --code-bg: #232a36; --track: #2c3340;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 18px 24px 8px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; }
+  h1 { font-size: 22px; margin: 0; letter-spacing: -0.2px; }
+  .tag { color: var(--muted); font-size: 14px; }
+  .sim { margin-left: auto; font-size: 12.5px; padding: 4px 10px; border-radius: 999px; background: var(--warn-bg);
+         color: var(--warn); border: 1px solid var(--warn); }
+  .flow { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 24px 16px; font-size: 13px; color: var(--muted); }
+  .flow span { padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+  .flow span.on { color: var(--ink); border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .flow i { font-style: normal; align-self: center; }
+  main { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.25fr) minmax(300px, 1.1fr);
+         gap: 16px; padding: 0 24px 32px; align-items: start; }
+  @media (max-width: 1100px) { main { grid-template-columns: 1fr; } }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 12px; }
+  h3 { font-size: 14px; margin: 16px 0 6px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  select, textarea, button, input[type=file] { font: inherit; color: inherit; }
+  select { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); }
+  textarea { width: 100%; height: 300px; padding: 10px; border-radius: 6px; border: 1px solid var(--line);
+             background: var(--code-bg); font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; resize: vertical; }
+  button { padding: 8px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  button.small { padding: 4px 10px; font-size: 13px; }
+  button:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .note { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+  .gauge { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .gauge svg { width: 200px; height: auto; }
+  .score { font-size: 44px; font-weight: 700; line-height: 1; }
+  .pill { display: inline-block; padding: 4px 12px; border-radius: 999px; font-weight: 600; font-size: 14px; margin-top: 8px; }
+  .pill.approve { background: var(--ok-bg); color: var(--ok); }
+  .pill.review { background: var(--warn-bg); color: var(--warn); }
+  .pill.reject { background: var(--bad-bg); color: var(--bad); }
+  ul.clean { margin: 6px 0 0; padding-left: 20px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { padding: 3px 9px; border-radius: 6px; font-size: 13px; background: var(--bad-bg); color: var(--bad); }
+  .chip.ok { background: var(--ok-bg); color: var(--ok); }
+  .effect { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 560px) { .effect { grid-template-columns: 1fr; } }
+  .box { border: 1px solid var(--line); border-radius: 8px; padding: 10px; font-size: 13px; background: var(--code-bg); min-width: 0; }
+  .box b { display: block; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .box.dim { opacity: .85; }
+  code, .mono { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; }
+  .badge.ok { background: var(--ok-bg); color: var(--ok); }
+  .badge.bad { background: var(--bad-bg); color: var(--bad); }
+  .empty { color: var(--muted); font-size: 13px; padding: 6px 0; }
+  .queue-item { border: 1px solid var(--line); border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+  .queue-item p { margin: 4px 0 8px; font-size: 13px; color: var(--muted); }
+  .tamper { margin-top: 8px; padding: 10px; border-radius: 8px; border: 1px dashed var(--line); font-size: 13px; }
+  .drop { border: 2px dashed var(--line); border-radius: 8px; padding: 12px; text-align: center; font-size: 13px;
+          color: var(--muted); background: var(--code-bg); margin-bottom: 10px; }
+  .drop.over { border-color: var(--accent); color: var(--accent); }
+  #extOut .box { margin-top: 8px; }
+  #extOut li.low { color: var(--warn); }
+</style>
+</head>
+<body>
+<header>
+  <h1>TrustGate</h1>
+  <span class="tag">Validate shipment documents before they reach the ledger</span>
+  <span class="sim" id="simBadge" title="No IBM Blockchain connection in this build">Ledger: SIMULATED (local hash-chain)</span>
+</header>
+<div class="flow" id="flow" aria-label="processing steps">
+  <span data-s="0">1 Documents</span><i>→</i><span data-s="1">2 Rule + ML checks</span><i>→</i>
+  <span data-s="2">3 Trust score</span><i>→</i><span data-s="3">4 Decision gate</span><i>→</i>
+  <span data-s="4" id="flowEnd">5 Ledger / Review / Rejected</span>
+</div>
+
+<main>
+  <section aria-labelledby="h-in">
+    <h2 id="h-in">1 · Submit documents</h2>
+    <label for="sample">Demo shipment</label>
+    <select id="sample"></select>
+    <div class="note" id="sampleNote"></div>
+    <div class="drop" id="drop" role="button" tabindex="0" aria-describedby="dropHint">
+      Drop documents here (PDF, Word, Excel, CSV, images…) or click to choose files
+      <input type="file" id="docs" multiple hidden>
+    </div>
+    <div class="note" id="dropHint" style="margin-top:-4px">Extraction only fills the JSON box below — nothing is validated until you press Validate.</div>
+    <div id="extOut"></div>
+    <label for="doc" style="margin-top:10px">Shipment JSON (purchase order, invoice, packing list, bill of lading)</label>
+    <textarea id="doc" spellcheck="false"></textarea>
+    <div class="row">
+      <button class="primary" id="btnValidate">Validate &amp; submit</button>
+      <label class="small" style="margin:0"><input type="file" id="file" accept=".json,application/json" hidden>
+        <button type="button" class="small" id="btnFile">Load JSON file…</button></label>
+      <button class="small" id="btnReset" title="Clears ledger, review queue and history added during the demo">Reset demo</button>
+    </div>
+    <div class="note" id="err" role="alert" style="color:var(--bad)"></div>
+  </section>
+
+  <section aria-labelledby="h-out" aria-live="polite">
+    <h2 id="h-out">2 · Trust score &amp; decision</h2>
+    <div id="result"><div class="empty">Pick a demo shipment and press “Validate &amp; submit”.</div></div>
+  </section>
+
+  <section aria-labelledby="h-led">
+    <h2 id="h-led">3 · Ledger &amp; human review</h2>
+    <div id="chain"></div>
+    <div id="ledger"></div>
+    <h3>Human review queue</h3>
+    <div id="queue"></div>
+    <h3>Tamper check</h3>
+    <label for="tsel">Recorded shipment</label>
+    <select id="tsel"></select>
+    <div class="row">
+      <button class="small" id="btnVerify">Verify unchanged document</button>
+      <button class="small" id="btnTamper">Tamper (+1 on invoice total) &amp; verify</button>
+    </div>
+    <div class="tamper" id="tamperOut">Only the SHA-256 hash and the score are on the ledger. If anyone edits a document afterwards, its hash no longer matches.</div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const API = "";   // same origin as the FastAPI server
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const short = (h) => (h ? h.slice(0, 10) + "…" + h.slice(-4) : "");
+
+async function api(path, opts) {
+  const r = await fetch(API + path, opts);
+  let body = null;
+  try { body = await r.json(); } catch (e) {}
+  if (!r.ok) throw new Error((body && body.detail) ? (typeof body.detail === "string" ? body.detail : JSON.stringify(body.detail)) : r.statusText);
+  return body;
+}
+const post = (p, data) => api(p, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+
+function setFlow(step) {
+  document.querySelectorAll("#flow span").forEach((s) => s.classList.toggle("on", step >= 0 && Number(s.dataset.s) <= step));
+}
+
+function gauge(score, decision) {
+  const NS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", "0 -8 120 80");
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "Trust score " + score + " out of 100");
+  const color = { approve: "var(--ok)", review: "var(--warn)", reject: "var(--bad)" }[decision];
+  const mk = (stroke, dash) => {
+    const p = document.createElementNS(NS, "path");
+    p.setAttribute("d", "M10 62 A50 50 0 0 1 110 62");
+    p.setAttribute("pathLength", "100");
+    p.setAttribute("fill", "none");
+    p.setAttribute("stroke", stroke);
+    p.setAttribute("stroke-width", "10");
+    p.setAttribute("stroke-linecap", "butt");
+    p.setAttribute("stroke-dasharray", dash);
+    return p;
+  };
+  svg.appendChild(mk("var(--track)", "100 100"));
+  svg.appendChild(mk(color, Math.max(score, 0.8) + " 100"));
+  [50, 80].forEach((t) => {                       // thresholds: review ≥ 50, approve ≥ 80
+    const a = Math.PI * (1 - t / 100), c = (r) => [60 + r * Math.cos(a), 62 - r * Math.sin(a)];
+    const [x1, y1] = c(43), [x2, y2] = c(57), [x3, y3] = c(65);
+    const l = document.createElementNS(NS, "line");
+    [["x1", x1], ["y1", y1], ["x2", x2], ["y2", y2]].forEach(([k, v]) => l.setAttribute(k, v));
+    l.setAttribute("stroke", "var(--ink)"); l.setAttribute("stroke-width", "1.5");
+    svg.appendChild(l);
+    const tx = document.createElementNS(NS, "text");
+    tx.setAttribute("x", x3); tx.setAttribute("y", y3 + 3); tx.setAttribute("font-size", "7");
+    tx.setAttribute("text-anchor", "middle"); tx.setAttribute("fill", "var(--muted)"); tx.textContent = t;
+    svg.appendChild(tx);
+  });
+  return svg;
+}
+
+const DECISION = {
+  approve: ["✓ APPROVED", "Hash + score written to the ledger"],
+  review: ["! HUMAN REVIEW", "Held in the review queue, nothing written yet"],
+  reject: ["✕ REJECTED", "Not written to the ledger"],
+};
+
+function docSummary(ship) {
+  const d = ship.documents, inv = d.invoice, box = el("div", "box dim");
+  box.appendChild(el("b", null, "Your documents (stay off-chain, private)"));
+  [["PO", d.purchase_order.doc_number], ["Invoice", inv.doc_number], ["Packing list", d.packing_list.doc_number],
+   ["Bill of lading", d.bill_of_lading.doc_number]].forEach(([k, v]) => box.appendChild(el("div", null, k + ": " + (v || "(empty)"))));
+  box.appendChild(el("div", null, "Invoice total: " + (inv.total_amount === null || inv.total_amount === "" ? "(empty)" : inv.total_amount + " " + (inv.currency || ""))));
+  return box;
+}
+
+let last = null;
+function renderResult(r, ship) {
+  last = { r, ship };
+  const root = $("result");
+  root.replaceChildren();
+  const g = el("div", "gauge");
+  g.appendChild(gauge(r.trust_score, r.decision));
+  const side = el("div");
+  side.appendChild(el("div", "score", String(r.trust_score)));
+  side.appendChild(el("div", "note", "trust score (0–100)"));
+  const ro = r.reviewOutcome;
+  const pillText = ro ? (ro.status === "approved" ? "✓ APPROVED BY REVIEWER" : "✕ REJECTED BY REVIEWER") : DECISION[r.decision][0];
+  const pillCls = ro ? (ro.status === "approved" ? "approve" : "reject") : r.decision;
+  side.appendChild(el("span", "pill " + pillCls, pillText));
+  side.appendChild(el("div", "note", ro ? (ro.status === "approved" ? "Hash + score written to the ledger after human approval" : "Not written to the ledger")
+                                         : DECISION[r.decision][1]));
+  g.appendChild(side);
+  root.appendChild(g);
+
+  root.appendChild(el("h3", null, "Rule checks"));
+  const chips = el("div", "chips");
+  if (r.rule_flags.length) r.rule_flags.forEach((f) => chips.appendChild(el("span", "chip", "✕ " + f.message)));
+  else chips.appendChild(el("span", "chip ok", "✓ all 7 rule checks passed"));
+  root.appendChild(chips);
+
+  root.appendChild(el("h3", null, "Why this score"));
+  const ul = el("ul", "clean");
+  r.reasons.forEach((x) => ul.appendChild(el("li", null, x)));
+  root.appendChild(ul);
+
+  const tech = el("div", "note");
+  tech.textContent = "ML fraud probability " + r.fraud_probability + " → ML trust " + r.ml_trust_score +
+    (r.rule_cap_applied ? " · capped to " + r.trust_score + " because a rule failed" : "") + " · engine: " + r.engine;
+  root.appendChild(tech);
+
+  root.appendChild(el("h3", null, "What this does to the file"));
+  const eff = el("div", "effect");
+  eff.appendChild(docSummary(ship));
+  const out = el("div", "box");
+  const entry = r.ledger_entry || (r.reviewOutcome && r.reviewOutcome.ledger_entry);
+  if (entry) {
+    const e = entry;
+    out.appendChild(el("b", null, "Ledger record #" + e.id + " (simulated)"));
+    [["shipment", e.shipment_id], ["doc hash", short(e.shipment_hash)], ["trust score", e.trust_score],
+     ["recorded by", e.source], ["prev entry", short(e.prev_hash)], ["entry hash", short(e.entry_hash)]]
+      .forEach(([k, v]) => out.appendChild(el("div", "mono", k + ": " + v)));
+  } else if (r.decision === "review" && !r.reviewOutcome) {
+    out.appendChild(el("b", null, "Review queue #" + r.review_id));
+    out.appendChild(el("div", null, "Waiting for a human reviewer. Approve or reject it in panel 3; only an approval writes to the ledger."));
+  } else {
+    out.appendChild(el("b", null, "Ledger"));
+    out.appendChild(el("div", null, "Nothing written. The faulty document never becomes a permanent record."));
+  }
+  eff.appendChild(out);
+  root.appendChild(eff);
+}
+
+async function refreshLedger() {
+  const L = await api("/api/ledger");
+  const chain = $("chain");
+  chain.replaceChildren();
+  chain.appendChild(el("span", "badge " + (L.chain_valid ? "ok" : "bad"),
+    L.chain_valid ? "✓ chain intact" : "✕ chain broken at entry " + L.broken_at));
+  chain.appendChild(el("span", "note", "  " + L.entries.length + " record(s) · " + L.backend));
+  const box = $("ledger");
+  box.replaceChildren();
+  const tsel = $("tsel"), keep = tsel.value;
+  tsel.replaceChildren();
+  if (!L.entries.length) {
+    box.appendChild(el("div", "empty", "Ledger is empty. Approved shipments appear here."));
+    tsel.appendChild(new Option("(no recorded shipments yet)", ""));
+    return;
+  }
+  const t = el("table"), head = el("tr");
+  ["#", "Shipment", "Score", "By", "Hash"].forEach((h) => head.appendChild(el("th", null, h)));
+  t.appendChild(head);
+  L.entries.slice().reverse().forEach((e) => {
+    const tr = el("tr");
+    [e.id, e.shipment_id, e.trust_score, e.source, short(e.shipment_hash)].forEach((v, i) => tr.appendChild(el("td", i === 4 ? "mono" : null, String(v))));
+    t.appendChild(tr);
+  });
+  box.appendChild(t);
+  L.entries.forEach((e) => tsel.appendChild(new Option(e.shipment_id + " (record #" + e.id + ")", e.shipment_id)));
+  if (keep) tsel.value = keep;
+}
+
+async function refreshQueue() {
+  const q = (await api("/api/review")).filter((x) => x.status === "pending");
+  const box = $("queue");
+  box.replaceChildren();
+  if (!q.length) { box.appendChild(el("div", "empty", "No shipments waiting for review.")); return; }
+  q.forEach((x) => {
+    const d = el("div", "queue-item");
+    d.appendChild(el("b", null, x.shipment_id + " · score " + x.trust_score));
+    d.appendChild(el("p", null, x.reasons.join("; ")));
+    const row = el("div", "row");
+    row.style.marginTop = "0";
+    [["approve", "Approve → write to ledger"], ["reject", "Reject"]].forEach(([a, label]) => {
+      const b = el("button", "small", label);
+      b.onclick = async () => {
+        try {
+          const out = await post("/api/review/" + x.id, { action: a });
+          if (last && last.r.review_id === x.id) { last.r.reviewOutcome = out; renderResult(last.r, last.ship); }
+          await refreshAll();
+        } catch (e) { $("err").textContent = e.message; }
+      };
+      row.appendChild(b);
+    });
+    d.appendChild(row);
+    box.appendChild(d);
+  });
+}
+const refreshAll = () => Promise.all([refreshLedger(), refreshQueue()]);
+
+function showTamper(r, label) {
+  const o = $("tamperOut");
+  o.replaceChildren();
+  o.appendChild(el("div", null, label));
+  o.appendChild(el("span", "badge " + (r.match ? "ok" : "bad"), r.match ? "✓ MATCH: untouched" : "✕ " + r.message));
+  if (r.ledger_hash) {
+    o.appendChild(el("div", "mono", "ledger hash:   " + short(r.ledger_hash)));
+    o.appendChild(el("div", "mono", "computed hash: " + short(r.computed_hash)));
+  }
+  if (r.changed_documents && r.changed_documents.length) o.appendChild(el("div", null, "Changed document(s): " + r.changed_documents.join(", ")));
+}
+
+async function tamperTest(modify) {
+  const sid = $("tsel").value;
+  if (!sid) { showTamper({ match: false, message: "record a shipment first" }, ""); return; }
+  const doc = await api("/api/ledger/" + encodeURIComponent(sid) + "/document");
+  if (modify) doc.documents.invoice.total_amount = Number(doc.documents.invoice.total_amount) + 1;
+  const r = await post("/api/verify", { shipment_id: sid, document: doc });
+  showTamper(r, modify ? "Invoice total changed by +1, then re-verified:" : "Stored document re-verified:");
+}
+
+let samples = [];
+async function loadSample(id) {
+  const s = await api("/api/samples/" + id);
+  $("doc").value = JSON.stringify(s.shipment, null, 2);
+  $("sampleNote").textContent = "Demo label (not shown to the model): " + s.true_type + " · from the " + s.split + " split";
+  $("err").textContent = "";
+}
+
+// ------------------------------------------------------------------ document upload (POST /api/extract)
+let extCaps = null;
+
+async function loadCapabilities() {
+  try {
+    extCaps = await api("/api/extract/capabilities");
+  } catch (e) { extCaps = null; return; }
+  const c = extCaps || {};
+  const exts = (c.limits && c.limits.allowed_extensions) || [];
+  if (!exts.length) { $("drop").style.display = "none"; return; }
+  $("docs").accept = exts.map((e) => "." + e).join(",");
+  const off = [];
+  if (!c.pdf) off.push("pdf");
+  if (!c.docx) off.push("docx");
+  if (!c.xlsx) off.push("xlsx/csv tables");
+  if (!c.ocr) off.push("scanned images (no Tesseract on this server)");
+  if (!c.legacy_doc) off.push(".doc/.xls (no LibreOffice on this server)");
+  $("dropHint").textContent = off.length
+    ? "Not available on this server: " + off.join(", ") + ". Extraction only fills the JSON box — nothing is validated until you press Validate."
+    : "Extraction only fills the JSON box below — nothing is validated until you press Validate.";
+  if (off.length) $("drop").title = "Unavailable here: " + off.join(", ");
+}
+
+function renderExtract(r) {
+  const box = $("extOut");
+  box.replaceChildren();
+
+  const files = el("div", "box");
+  files.appendChild(el("b", null, "Files read"));
+  (r.files || []).forEach((f) => files.appendChild(el("div", null,
+    f.name + " → " + f.detected_type + " · " + (f.doc_type || "unclassified") +
+    " · " + f.pages + " page(s) · " + f.method + (f.error ? " · " + f.error : ""))));
+  box.appendChild(files);
+
+  const conf = r.confidence || {}, missing = r.missing || [], LOW = 0.6;
+  const low = Object.keys(conf).filter((k) => conf[k] < LOW);
+  const f2 = el("div", "box");
+  f2.appendChild(el("b", null, "Fields to check"));
+  if (!missing.length && !low.length) f2.appendChild(el("div", null, "All fields were read with high confidence."));
+  if (missing.length) {
+    f2.appendChild(el("div", null, "Missing (" + missing.length + "): " + missing.join(", ")));
+    const ul = el("ul", "clean");
+    missing.forEach((m) => ul.appendChild(el("li", null, m)));
+    f2.appendChild(ul);
+  }
+  if (low.length) {
+    f2.appendChild(el("div", null, "Low confidence (<" + LOW + "):"));
+    const ul = el("ul", "clean");
+    low.forEach((k) => ul.appendChild(el("li", "low", k + " — confidence " + conf[k])));
+    f2.appendChild(ul);
+  }
+  box.appendChild(f2);
+
+  if ((r.warnings || []).length) {
+    const w = el("div", "box");
+    w.appendChild(el("b", null, "Warnings"));
+    const ul = el("ul", "clean");
+    r.warnings.forEach((x) => ul.appendChild(el("li", null, x)));
+    w.appendChild(ul);
+    box.appendChild(w);
+  }
+}
+
+async function uploadDocs(fileList) {
+  const files = Array.from(fileList || []);
+  if (!files.length) return;
+  const fd = new FormData();
+  files.forEach((f) => fd.append("files", f, f.name));
+  $("err").textContent = "";
+  $("extOut").replaceChildren(el("div", "note", "Reading " + files.length + " file(s)…"));
+  let r;
+  try {
+    const res = await fetch(API + "/api/extract", { method: "POST", body: fd });
+    let body = null;
+    try { body = await res.json(); } catch (e) {}
+    if (!res.ok) throw new Error((body && body.detail) ? String(body.detail) : res.statusText);
+    r = body;
+  } catch (e) {
+    $("extOut").replaceChildren();
+    $("err").textContent = "Extraction failed: " + e.message;
+    return;
+  }
+  $("doc").value = JSON.stringify(r.shipment, null, 2);   // fills the EXISTING textarea; nothing is validated
+  $("sampleNote").textContent = "Extracted from " + files.map((f) => f.name).join(", ") +
+    " · edit the JSON if needed, then press “Validate & submit”";
+  renderExtract(r);
+}
+
+async function validate() {
+  $("err").textContent = "";
+  let ship;
+  try { ship = JSON.parse($("doc").value); } catch (e) { $("err").textContent = "That is not valid JSON: " + e.message; return; }
+  setFlow(1);
+  try {
+    const r = await post("/api/validate", ship);
+    setFlow(4);
+    renderResult(r, ship);
+    await refreshAll();
+  } catch (e) { setFlow(-1); $("err").textContent = e.message; }
+}
+
+async function init() {
+  try {
+    const h = await api("/api/health");
+    $("simBadge").title = h.ledger + " · " + h.engine;
+  } catch (e) { $("err").textContent = "API not reachable: " + e.message; }
+  samples = await api("/api/samples");
+  samples.forEach((s) => $("sample").appendChild(new Option(s.label, s.id)));
+  $("sample").onchange = (e) => loadSample(e.target.value);
+  $("btnValidate").onclick = validate;
+  $("btnVerify").onclick = () => tamperTest(false).catch((e) => ($("err").textContent = e.message));
+  $("btnTamper").onclick = () => tamperTest(true).catch((e) => ($("err").textContent = e.message));
+  $("btnFile").onclick = () => $("file").click();
+  $("drop").onclick = () => $("docs").click();
+  $("drop").onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); $("docs").click(); } };
+  ["dragenter", "dragover"].forEach((ev) => $("drop").addEventListener(ev, (e) => {
+    e.preventDefault(); $("drop").classList.add("over");
+  }));
+  ["dragleave", "drop"].forEach((ev) => $("drop").addEventListener(ev, (e) => {
+    e.preventDefault(); $("drop").classList.remove("over");
+  }));
+  $("drop").addEventListener("drop", (e) => uploadDocs(e.dataTransfer.files));
+  $("docs").onchange = (e) => { uploadDocs(e.target.files); e.target.value = ""; };
+  await loadCapabilities();
+  $("file").onchange = async (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    $("doc").value = await f.text();
+    $("sampleNote").textContent = "Loaded file: " + f.name;
+  };
+  $("btnReset").onclick = async () => {
+    await post("/api/reset", {});
+    $("result").replaceChildren(el("div", "empty", "Demo reset. Pick a shipment and press “Validate & submit”."));
+    $("tamperOut").textContent = "Only the SHA-256 hash and the score are on the ledger. If anyone edits a document afterwards, its hash no longer matches.";
+    setFlow(-1);
+    await refreshAll();
+  };
+  if (samples.length) await loadSample(samples[0].id);
+  await refreshAll();
+}
+init();
+</script>
+</body>
+</html>

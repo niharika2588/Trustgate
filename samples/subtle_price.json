@@ -1,0 +1,133 @@
+{
+ "label": "Subtle: price 1.3-1.9x list",
+ "true_type": "subtle_price",
+ "split": "test",
+ "shipment": {
+  "shipment_id": "SHP-004583",
+  "documents": {
+   "purchase_order": {
+    "doc_type": "purchase_order",
+    "doc_number": "PO-504583",
+    "date": "2025-06-16",
+    "seller": "Summit Traders GmbH",
+    "buyer": "Evergreen Imports LLC",
+    "currency": "USD",
+    "incoterm": "FOB",
+    "items": [
+     {
+      "product_id": "835",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "unit_price": 52.45,
+      "total": 5245.0
+     },
+     {
+      "product_id": "906",
+      "hs_code": "392690",
+      "description": "Accessories",
+      "qty": 500,
+      "unit_price": 24.49,
+      "total": 12245.0
+     },
+     {
+      "product_id": "860",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 100,
+      "unit_price": 503.99,
+      "total": 50399.0
+     }
+    ],
+    "shipment_id": "SHP-004583",
+    "total_amount": 67889.0
+   },
+   "invoice": {
+    "doc_type": "invoice",
+    "doc_number": "INV-104583",
+    "date": "2025-06-27",
+    "po_number": "PO-504583",
+    "seller": "Summit Traders GmbH",
+    "buyer": "Evergreen Imports LLC",
+    "currency": "USD",
+    "incoterm": "FOB",
+    "items": [
+     {
+      "product_id": "835",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "unit_price": 52.45,
+      "total": 5245.0
+     },
+     {
+      "product_id": "906",
+      "hs_code": "392690",
+      "description": "Accessories",
+      "qty": 500,
+      "unit_price": 24.49,
+      "total": 12245.0
+     },
+     {
+      "product_id": "860",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 100,
+      "unit_price": 503.99,
+      "total": 50399.0
+     }
+    ],
+    "shipment_id": "SHP-004583",
+    "total_amount": 67889.0
+   },
+   "packing_list": {
+    "doc_type": "packing_list",
+    "doc_number": "PL-304583",
+    "date": "2025-06-27",
+    "invoice_number": "INV-104583",
+    "items": [
+     {
+      "product_id": "835",
+      "hs_code": "851762",
+      "description": "Electronics",
+      "qty": 100,
+      "net_weight_kg": 30.0
+     },
+     {
+      "product_id": "906",
+      "hs_code": "392690",
+      "description": "Accessories",
+      "qty": 500,
+      "net_weight_kg": 150.0
+     },
+     {
+      "product_id": "860",
+      "hs_code": "950631",
+      "description": "Kids' Golf Clubs",
+      "qty": 100,
+      "net_weight_kg": 180.0
+     }
+    ],
+    "total_packages": 14,
+    "gross_weight_kg": 385.58,
+    "shipment_id": "SHP-004583"
+   },
+   "bill_of_lading": {
+    "doc_type": "bill_of_lading",
+    "doc_number": "BL-704583",
+    "invoice_number": "INV-104583",
+    "shipper": "Summit Traders GmbH",
+    "consignee": "Evergreen Imports LLC",
+    "port_of_loading": "NLRTM",
+    "port_of_discharge": "USNYC",
+    "ship_on_board_date": "2025-06-29",
+    "delivery_eta": "2025-07-28",
+    "vessel": "ONE Harmony",
+    "container_no": "ONEU9265942",
+    "total_packages": 14,
+    "gross_weight_kg": 385.58,
+    "shipment_id": "SHP-004583"
+   }
+  }
+ }
+}
